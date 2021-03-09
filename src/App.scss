@@ -3,4 +3,11 @@
 .app {
   height: 100vh;
   background-image: linear-gradient(to right bottom, $primary-color-dark 75%, $primary-color-light 25%);
+  color: $primary-font-color;
+}
+.heading {
+  display: inline-block;
+  width: 500px;
+  clip-path: polygon(0 0, 100% 0, 75% 100%, -25% 100%);
+  background: $primary-color-light;
 }
