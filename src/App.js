@@ -4,6 +4,7 @@ import List from './components/list/list'
 import './App.scss'
 
 const App = () => {
+
   return (
     <div className="app">
       <div className='heading'>
