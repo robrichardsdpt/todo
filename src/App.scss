@@ -1,4 +1,5 @@
 @import 'styles/variables.scss';
+@import 'styles/base.scss';
 
 .app {
   height: 100vh;
@@ -8,6 +9,14 @@
 .heading {
   display: inline-block;
   width: 500px;
+  font-size: 2rem;
+  padding: 2rem;
   clip-path: polygon(0 0, 100% 0, 75% 100%, -25% 100%);
   background: $primary-color-light;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60%;
 }
