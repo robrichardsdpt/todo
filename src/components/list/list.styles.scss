@@ -1,0 +1,17 @@
+@import '../../styles/variables.scss';
+
+.list {
+  background-image: linear-gradient(to right bottom, rgba(black, .2), rgba(black, .7));
+  padding: 3rem;
+  border-radius: 3rem;
+  border: 1px solid $primary-font-color;
+}
+
+.list__header {
+  font-size: 1.75rem;
+}
+.list__content {
+  display: flex;
+  justify-content: center;
+  font-size: 1.25rem;
+}
