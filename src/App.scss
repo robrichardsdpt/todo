@@ -1,0 +1,6 @@
+@import 'styles/variables.scss';
+
+.app {
+  height: 100vh;
+  background-image: linear-gradient(to right bottom, $primary-color-dark 75%, $primary-color-light 25%);
+}
