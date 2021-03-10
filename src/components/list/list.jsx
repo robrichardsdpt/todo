@@ -7,7 +7,7 @@ const List = () => {
   const todosJsx = todos.map((todo, index) => {
     return(
       <div key={index}>
-        <h2>{todo}</h2>
+        <li>{todo}</li>
       </div>
     )
   })
@@ -17,7 +17,7 @@ const List = () => {
        <h2>this is your todo list</h2>
       </div>
       <div className='list__content'>
-        <ul>
+        <ul className='list__unordered-list'>
           {todosJsx}
         </ul>
       </div>
