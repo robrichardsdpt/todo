@@ -24,8 +24,17 @@
 }
 
 .list__item {
+  font-size: 1.75rem;
+  padding: 1rem;
+  transition: all .5s;
   &:hover {
     color: lightgoldenrodyellow;
-    background-image: linear-gradient(to top right, ($primary-color-light 50%, $primary-color-dark 100%));
+    background: $primary-color-light;
+    transform: skewX(-15deg);
+    cursor: pointer;
   }
+  &:active {
+    transform: skewX(-15deg) scale(.9);
+  }
+
 }
