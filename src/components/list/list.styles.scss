@@ -26,6 +26,6 @@
 .list__item {
   &:hover {
     color: lightgoldenrodyellow;
-    background-image: linear-gradient(to right, ($primary-color-light 50%, $primary-color-dark 100%));
+    background-image: linear-gradient(to top right, ($primary-color-light 50%, $primary-color-dark 100%));
   }
 }
