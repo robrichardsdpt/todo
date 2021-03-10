@@ -36,5 +36,20 @@
   &:active {
     transform: skewX(-15deg) scale(.9);
   }
-
 }
+  .list__item-checked {
+    font-size: 1.75rem;
+    padding: 1rem;
+    transition: all .5s;
+    text-decoration: line-through;
+    color: #777;
+    &:hover {
+      color: lightgoldenrodyellow;
+      background: $primary-color-light;
+      transform: skewX(-15deg);
+      cursor: pointer;
+    }
+    &:active {
+      transform: skewX(-15deg) scale(.9);
+    }
+  }
