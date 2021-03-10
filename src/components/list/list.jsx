@@ -7,7 +7,7 @@ const List = () => {
   const todosJsx = todos.map((todo, index) => {
     return(
       <div key={index}>
-        <li>{todo}</li>
+        <li className='list__item'>{todo}</li>
       </div>
     )
   })
