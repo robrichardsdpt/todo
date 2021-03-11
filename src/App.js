@@ -6,8 +6,14 @@ import './App.scss'
 
 const App = () => {
   const [newTodo, setNewTodo] = useState('')
+  const [altMode, setAltMode] = useState(false)
   const [todos, setTodos] = useState([ {text: 'Set up internet', finished: false, id:0}, {text: 'build desk', finished: false, id:1}, {text: 'go to ikea', finished: false, id:2}])
   
+  const handleAltMode = () => {
+    setAltMode(!altMode)
+    console.log(altMode)
+  }
+
   const handleComplete = (id) => {
     const updatedTodos = todos.map(item => (item.id === id ? {...item, finished:!item.finished } : item))
     setTodos(updatedTodos)
@@ -27,9 +33,11 @@ const App = () => {
     setNewTodo('')
   }
 
+
   return (
-    <div className="app">
-      <div className='heading'>
+    <div className={altMode ? 'alt-app' : 'app'}>
+      <div className= 'alt-mode-button' onClick={handleAltMode}>{altMode ? 'Change to blue' : 'Change to pink'}</div>
+      <div className={altMode ? 'alt-heading' : 'heading'}>
         <h1>
           Todo List
         </h1>
